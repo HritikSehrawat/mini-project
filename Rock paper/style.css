@@ -1,0 +1,145 @@
+*{
+    margin:10px;
+    padding: 2px;
+    background-color: rgb(228, 212, 215);
+}
+
+.choices{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+
+}
+
+h1{
+    background-color: cadetblue;
+    color: black;
+    height: 50px;
+    line-height: 50px;
+    
+    border-right: 20px solid black;
+    border-radius: 10px;
+}
+
+.img{
+    
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    border: 2px;
+    border-radius: 50%;
+    border-color: #0c0c0c;
+    box-shadow: 0 0 10px #000106;
+}
+
+.image{
+    
+    height: 230px;
+    width: 230px;
+    
+    border: 2px;
+    border-radius: 50%;
+}
+.score-board{
+    display: flex;
+    justify-content: center;
+    /* height: 100px;
+    width: 200px;
+    border: 2px solid black;
+    text-align: center;
+    flex-direction: row; */
+    font-size: 40px;
+
+    
+    
+    
+}
+
+/* .score{
+    
+    /* border: 1px solid black; */
+    /* justify-content: center;
+    text-align: center; */
+
+
+
+.img:hover{
+    
+    cursor: pointer;
+   /* ackground-color: rgb(0, 0, 0); b */
+   /* background-color: rgb(21, 20, 20); */
+   border-color: #052c34;
+   box-shadow: 20px 0px 20px #0e0e0e;
+
+}
+
+#msg{
+    
+   /* align-items:end;
+    flex-direction:column; */
+    
+    justify-content: center;
+    margin :20px;
+    border: 2px solid rgb(25, 114, 141);
+    background-color: rgb(23, 111, 131);
+    text-align: center;
+    width: 250px;
+    height: 50px;
+    border-radius: 30px;
+    text-align: center;
+    
+    color: aliceblue;
+    height: 3rem;
+    align-items: center;
+}
+
+.msg-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 3rem;
+}
+
+#user-score{
+    font-size: 100px;
+}
+
+#comp-score{
+    font-size: 100px;
+}
+
+.RESET{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        line-height: 3rem;
+    }
+
+
+    #reset{
+        justify-content: center;
+        margin :20px;
+        border: 2px solid rgb(25, 114, 141);
+        background-color: rgb(23, 111, 131);
+        text-align: center;
+        width: 250px;
+        height: 50px;
+        border-radius: 30px;
+        text-align: center;
+        
+        color: aliceblue;
+        height: 3rem;
+        align-items: center;
+
+
+
+    }
+
+    #image{
+        position: absolute; left: 20px; bottom:80px; height: 150px; width: 150px;
+    }
+
+ #thumb{
+    position:absolute; right:20px; bottom: 200px; height: 80px; width: 80px;
+ }
