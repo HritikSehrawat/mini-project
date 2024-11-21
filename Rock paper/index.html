@@ -8,48 +8,29 @@
 </head>
 <body>
     <h1> ROCK PAPER AND SCISSOR</h1>
-    <div class="choices">
-        <div class="choice" id="rock">
-            <img src="./rock.png" alt="rock" class="img" >
+    <div class="game-container">
+        
+        <div class="choices">
+            <img src="rock.png" alt="Rock" id="rock" class="choice">
+            <img src="paper.png" alt="Paper" id="paper" class="choice">
+            <img src="scissors.png" alt="Scissors" id="scissors" class="choice">
         </div>
-       <div class="choice" id="paper">
-        <img src="./paper.png" alt="paper" class="img" >
-       </div>
-       <div class="choice" id="scissors">
-        <img src="./scissors.png" alt="scissors"class="img"  >
-       </div>
-    </div>
-
-    <div class="score-board">
-        <div class="score">
-            <p id="user-score"> 0</p>
-            <p>YOU</p> 
-        </div> 
-
-        <div class="score">
-            <p id="comp-score"> 0</p>
-            <p> COMP</p>
+        <div class="scoreboard">
+            <p>Wins: <span id="wins">0</span> | Losses: <span id="losses">0</span> | Ties: <span id="ties">0</span></p>
         </div>
-    </div>
-         
 
-    <div class="msg-container">
-        <p id="msg">PLAY YOUR MOVE</p>
-    </div>
+        <div class="player-choice">
+            <h3>Your Choice:</h3>
+            <img id="playerChoiceDisplay" class="choice-display" src="hand.jpg" alt="Player's hand">
+        </div>
 
+        <div class="computer-choice">
+            <h3>Computer's Choice:</h3>
+            <img id="computerChoiceDisplay" class="choice-display" src="hand.jpg" alt="Computer's hand">
+        </div>
 
-
-     <div id="image"></div>
-
-    
-     <div id="thumb" style="position:absolute; right: 300px; bottom: 100px; height: 100px; width: 100px;"> </div>
-
-
-
-
-
-    <div class="RESET">
-        <P id="reset" onclick="reset_btn()"> RESET YOUR GAME</P>
+        <div id="result" class="result"></div>
+        <button class="reset-btn" onclick="resetGame()">Play Again</button>
     </div>
 
     

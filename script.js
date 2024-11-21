@@ -4,8 +4,8 @@ function displayHome() {
         <p>Choose a game and smash it in just 5 minutes!</p>
         <div class="home-images">
             <img src="Hit the number.jpg" alt="Game Image 1" class="home-image">
-            <img src="https://via.placeholder.com/150" alt="Game Image 2" class="home-image">
-            <img src="https://via.placeholder.com/150" alt="Game Image 3" class="home-image">
+            <img src="rock.jpg" alt="Game Image 2" class="home-image">
+            <img src="snake.jpg" alt="Game Image 3" class="home-image">
         </div>
         <div class="home-icons">
             <div class="icon">

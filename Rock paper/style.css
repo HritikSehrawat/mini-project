@@ -1,145 +1,115 @@
-*{
-    margin:10px;
-    padding: 2px;
-    background-color: rgb(228, 212, 215);
-}
-
-.choices{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-
-}
-
-h1{
-    background-color: cadetblue;
-    color: black;
-    height: 50px;
-    line-height: 50px;
-    
-    border-right: 20px solid black;
-    border-radius: 10px;
-}
-
-.img{
-    
-    height: 200px;
-    width: 200px;
-    margin: 10px;
-    border: 2px;
-    border-radius: 50%;
-    border-color: #0c0c0c;
-    box-shadow: 0 0 10px #000106;
-}
-
-.image{
-    
-    height: 230px;
-    width: 230px;
-    
-    border: 2px;
-    border-radius: 50%;
-}
-.score-board{
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f06, #f79, #f93); /* Gradient background */
+    animation: gradientShift 8s ease infinite; /* Smooth background animation */
+    background-size: 400% 400%;
     display: flex;
     justify-content: center;
-    /* height: 100px;
-    width: 200px;
-    border: 2px solid black;
-    text-align: center;
-    flex-direction: row; */
-    font-size: 40px;
-
-    
-    
-    
-}
-
-/* .score{
-    
-    /* border: 1px solid black; */
-    /* justify-content: center;
-    text-align: center; */
-
-
-
-.img:hover{
-    
-    cursor: pointer;
-   /* ackground-color: rgb(0, 0, 0); b */
-   /* background-color: rgb(21, 20, 20); */
-   border-color: #052c34;
-   box-shadow: 20px 0px 20px #0e0e0e;
-
-}
-
-#msg{
-    
-   /* align-items:end;
-    flex-direction:column; */
-    
-    justify-content: center;
-    margin :20px;
-    border: 2px solid rgb(25, 114, 141);
-    background-color: rgb(23, 111, 131);
-    text-align: center;
-    width: 250px;
-    height: 50px;
-    border-radius: 30px;
-    text-align: center;
-    
-    color: aliceblue;
-    height: 3rem;
     align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    color: #fff;
 }
 
-.msg-container{
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.game-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.choices {
     display: flex;
     justify-content: center;
-    text-align: center;
-    line-height: 3rem;
+    margin-bottom: 30px;
+}
+.choice-display{
+    width: 50px;
+    height: 50px;
 }
 
-#user-score{
-    font-size: 100px;
+.choice {
+    margin: 0 15px;
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
 }
 
-#comp-score{
-    font-size: 100px;
+.choice:hover {
+    transform: scale(1.1);
 }
 
-.RESET{
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        line-height: 3rem;
-    }
+.scoreboard {
+    margin-top: 20px;
+    font-size: 18px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    color: black;
+    font-weight: bold;
+}
 
+.result {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
 
-    #reset{
-        justify-content: center;
-        margin :20px;
-        border: 2px solid rgb(25, 114, 141);
-        background-color: rgb(23, 111, 131);
-        text-align: center;
-        width: 250px;
-        height: 50px;
-        border-radius: 30px;
-        text-align: center;
-        
-        color: aliceblue;
-        height: 3rem;
-        align-items: center;
+img {
+    width: 80%;
+    height: 80%;
+    border-radius: 8px;
+}
 
+.reset-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
 
+.reset-btn:hover {
+    background-color: #0056b3;
+}
 
-    }
+/* For displaying choices */
+.player-choice, .computer-choice {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
 
-    #image{
-        position: absolute; left: 20px; bottom:80px; height: 150px; width: 150px;
-    }
-
- #thumb{
-    position:absolute; right:20px; bottom: 200px; height: 80px; width: 80px;
- }
+.choice-display {
+    margin: 0 20px;
+    width: 150px;
+    height: 150px;
+}
